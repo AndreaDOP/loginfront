@@ -7,7 +7,7 @@ const Notas = () => {
   const [editItem, setEditItem] = useState(null);
 
   function handleInputChange(e) {
-    set.Title(e.target.value);
+    setTitle(e.target.value);
   }
 
   function handleSubmit(e) {
@@ -29,14 +29,14 @@ const Notas = () => {
   function handleDelete(id) {
     const tempNotas = notas.filter((item) => item.id !== id);
 
-    setNOtas([...tempNotas]);
+    setNotas([...tempNotas]);
   }
 
   function handleUpdate(id, value) {
     const temp = [... notas];
     const item = temp.find((item) => item.id === id); 
     item.title = value;
-    setNotas(...temp);
+    setNotas([...temp]);
   }
 
   function handleCheckboxChange(id, status) {
@@ -78,7 +78,7 @@ const Notas = () => {
      </div>  
     </div>    
     </>
-    );
+    )
 }
 
 export default Notas;

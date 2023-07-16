@@ -52,15 +52,15 @@ const Notaslis = ({ item, onUpdate, onComplete,onDelete }) => {
 
         <div className="notaslisInfo">
             <input
-            type={"checkbox"}
-            onChange={handleChangeCheck}
-            checked={item.checked}  
+            type="checkbox"
+            onChange={handleCheckboxChange} 
+            checked={item.complete}  
         />
             <span
             className="notaslisTitle"
             style={{
                 color: item.completed ? "#ccc" : "",
-                textDecoration: item.completaed ? "line-through" :  "",
+                textDecoration: item.complete ? "line-through" :  "",
             }}
             >
                 {item.title}
@@ -69,7 +69,7 @@ const Notaslis = ({ item, onUpdate, onComplete,onDelete }) => {
                 Edit
             </button>
             <button className="buttonDelete" onClick={() => onDelete(item.id)}>
-                Update
+                Delete
             </button>
         </div>
     )}
