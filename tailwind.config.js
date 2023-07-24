@@ -10,6 +10,10 @@ export default {
   
   theme: {
     extend: {
+      backgroundImage: {
+        'custom-background-image':
+        "url('https://jardinica.com/wp-content/uploads/2023/07/image-15.png')",
+      },
       fontFamily: {
        DynaPuff: ['DynaPuff', 'cursive'],
       },

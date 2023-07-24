@@ -31,7 +31,7 @@ const ProductList = ({
   return (
     <div className="grid grid-cols-3 gap-4 container mx-auto flex-wrap p-3 flex-col md:flex-row items-center">
       <div className="col-span-3 text-center">
-        <h1 className="text-4xl font-bold text-orange-600 mb-8 mt-10">Servicios de Limpieza</h1>
+        <h1 className="text-4xl font-bold text-orange-600 mb-8 mt-8">Servicios de Limpieza</h1>
       </div>
       {data.map((product) => (
         <div key={product.id} className="bg-white rounded-lg shadow-md p-4">

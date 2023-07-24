@@ -4,8 +4,9 @@ import { useState } from 'react';
 import  Header  from './Componentes/Header.jsx';
 import ProductList from './Componentes/ProductList'; // Importa el componente ProductList
 
-import 'semantic-ui-css/semantic.min.css';
 import 'tailwindcss/tailwind.css';
+import 'semantic-ui-css/semantic.min.css';
+
 
 import Layout from './Componentes/layout';
 import NavBar from './Componentes/navbar';
@@ -56,6 +57,7 @@ function App() {
           countProducts={countProducts}
           setCountProducts={setCountProducts}
         />
+         <Layout>
         <Routes>
         
           <Route path="/" element={<Home />} />
@@ -69,9 +71,11 @@ function App() {
           <Route path='*' element={<Navigate to="/" />} />
          
         </Routes>
+        </Layout>
+        <Footer />
       </div>
 
-        <Footer />
+        
     
     </>
   );
