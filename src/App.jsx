@@ -4,6 +4,7 @@ import { useState } from 'react';
 import  Header  from './Componentes/Header.jsx';
 import ProductList from './Componentes/ProductList'; // Importa el componente ProductList
 
+
 import 'tailwindcss/tailwind.css';
 import 'semantic-ui-css/semantic.min.css';
 
@@ -13,13 +14,14 @@ import NavBar from './Componentes/navbar';
 import Footer from './Componentes/footer';
 
 import Home from './Componentes/Home';
+import Formulario from './Componentes/Formulario';
 import Lista from './Componentes/Lista';
 import Notas from './Componentes/notas';
-import Formulario from './Componentes/Formulario';
+import Clientes from "./Componentes/Clientes";
+
 import Update from './Componentes/Update';
 
-import Login from "./Componentes/page/login";
-import Contacto from "./Componentes/page/contacto";
+
 
 function App() {
   const [allProducts, setAllProducts] = useState([]);
@@ -61,21 +63,18 @@ function App() {
         <Routes>
         
           <Route path="/" element={<Home />} />
-          <Route path="/lista" element={<Lista />} />
-          <Route path="/notas" element={<Notas />} />
           <Route path="/ProductList" element={<ProductList addToCart={addToCart}  />} />
           <Route path="/formulario" element={<Formulario />} />
-          <Route path="/update" element={<Update />} />
-          <Route path='/login' element={<Login />} />
-          <Route path='/contacto' element={<Contacto />} />
+          {/*<Route path="/lista" element={<Lista />} />*/}
+          <Route path="/notas" element={<Notas />} />         
+          <Route path="/update" element={<Update />} />         
+          <Route path='/clientes' element={<Clientes />} />
           <Route path='*' element={<Navigate to="/" />} />
          
         </Routes>
         </Layout>
         <Footer />
-      </div>
-
-        
+      </div>       
     
     </>
   );

@@ -30,6 +30,11 @@ const NavBar = () => {
   return (
     <header className="bg-zinc-50 text-white body-font">
       <div className="container mx-auto flex flex-wrap p-3 flex-col md:flex-row items-center justify-center">
+          {/* Logo */}
+         <NavLink to="/" className="flex title-font font-medium items-center mb-2 md:mb-0 mt-8">
+          <img src='/logo.png' alt="Logo" className={`w-28 h-28 ml-3 text-xl font-bold text-orange-600 ${logoStyles}`} />
+          <span className="ml-3 text-xl font-bold text-orange-600"></span>
+        </NavLink>
         {/* Boton Hamburguesa */}
         <nav className='md:hidden'>
           <button 
@@ -40,20 +45,20 @@ const NavBar = () => {
           </button>
         </nav>
 
-        <NavLink to="/" className="flex title-font font-medium items-center mb-2 md:mb-0">
-          <img src='/logo.png' alt="Logo" className={`w-28 h-28 ml-3 text-xl font-bold text-orange-600 ${logoStyles}`} />
-          <span className="ml-3 text-xl font-bold text-orange-600"></span>
-        </NavLink>
+       
 
         <nav className={navMenuStyles}>
           <NavLink to="/" activeClassName={activeLink} className={btnLink}>Home</NavLink>    
-          <NavLink to="formulario" activeClassName={activeLink} className={btnLink}>Formulario</NavLink>
-          <NavLink to="lista" activeClassName={activeLink} className={btnLink}>Lista</NavLink>  
           <NavLink to="ProductList" activeClassName={activeLink} className={btnLink}>Servicios</NavLink> 
+          <NavLink to="formulario" activeClassName={activeLink} className={btnLink}>Contacto</NavLink>
+          
+          {/*<NavLink to="lista" activeClassName={activeLink} className={btnLink}>Lista</NavLink>*/}  
+                    
           <NavLink to="notas" activeClassName={activeLink} className={btnLink}>MisNotas</NavLink>   
-       
-          <NavLink to="/login" activeClassName={activeLink} className={btnLink}>Login</NavLink>
-          <NavLink to="contacto" activeClassName={activeLink} className={btnLink}>Contacto</NavLink>
+                 
+          
+          
+          <NavLink to="contacto" activeClassName={activeLink} className={btnLink}>Clientes Felices</NavLink>
         </nav>
       </div>
     </header>
