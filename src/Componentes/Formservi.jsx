@@ -111,8 +111,8 @@ const Formservi = () => {
 
                     <Button type='submit' positive>Enviar Datos</Button>
 
-
                 </div>
+                
             </Form>
         </div>
     )
