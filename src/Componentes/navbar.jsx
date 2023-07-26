@@ -24,7 +24,7 @@ const NavBar = () => {
     ? 'w-12 h-12 ml-3'
     : 'w-20 h-20';
 
-  const btnLink = 'inline-block py-1 text-lg font-bold text-orange-600 hover:text-blue-500 cursor-pointer mr-4';
+  const btnLink = 'inline-block py-1 text-xl font-bold text-orange-600 hover:text-green-600 cursor-pointer mr-4';
   const activeLink = 'block inline-block py-1 text-white mr-4';
   
   return (
@@ -51,14 +51,10 @@ const NavBar = () => {
           <NavLink to="/" activeClassName={activeLink} className={btnLink}>Home</NavLink>    
           <NavLink to="ProductList" activeClassName={activeLink} className={btnLink}>Servicios</NavLink> 
           <NavLink to="formulario" activeClassName={activeLink} className={btnLink}>Contacto</NavLink>
-          
           {/*<NavLink to="lista" activeClassName={activeLink} className={btnLink}>Lista</NavLink>*/}  
-                    
           <NavLink to="notas" activeClassName={activeLink} className={btnLink}>MisNotas</NavLink>   
-                 
-          
-          
-          <NavLink to="contacto" activeClassName={activeLink} className={btnLink}>Clientes Felices</NavLink>
+          <NavLink to="clientes" activeClassName={activeLink} className={btnLink}>Clientes Felices</NavLink>          
+                   
         </nav>
       </div>
     </header>

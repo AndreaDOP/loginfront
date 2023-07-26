@@ -68,10 +68,11 @@ function App() {
           {/*<Route path="/lista" element={<Lista />} />*/}
           <Route path="/notas" element={<Notas />} />         
           <Route path="/update" element={<Update />} />         
-          <Route path='/clientes' element={<Clientes />} />
+          <Route path="/clientes" element={<Clientes />} />
           <Route path='*' element={<Navigate to="/" />} />
          
         </Routes>
+        
         </Layout>
         <Footer />
       </div>       
