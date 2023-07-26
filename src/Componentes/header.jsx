@@ -29,13 +29,13 @@ const Header = ({
     <header className="container flex items-center justify-end px-1 py-1">
       <div className="relative">
         <button
-          className="flex items-center justify-center w-20 h-20 bg-gray-300 rounded-full"
+          className="flex items-center justify-center w-10 h-10 bg-gray-300 rounded-full -mt-30"
           onClick={() => setActive(!active)}
         >
           <img
             src="../public/tienda.png"
             alt=""
-            className="w-10 h-10 cursor-pointer"
+            className="w-5 h-5 cursor-pointer "
           />
           {countProducts > 0 && (
             <span className="absolute top-0 right-0 inline-flex items-center justify-center w-4 h-4 text-xs font-bold text-white bg-red-500 rounded-full">

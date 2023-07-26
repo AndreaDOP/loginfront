@@ -1,13 +1,18 @@
 
 import { Navigate, Routes, Route } from 'react-router-dom';
 import { useState } from 'react';
-import  Header  from './Componentes/Header.jsx';
+import  Header  from './Componentes/header';
 import ProductList from './Componentes/ProductList'; // Importa el componente ProductList
 
 
 import 'tailwindcss/tailwind.css';
 import 'semantic-ui-css/semantic.min.css';
 
+import Ltotal from './Componentes/servicios/ltotal';
+import Lbasica from './Componentes/servicios/lbasica';
+import Lexterior from './Componentes/servicios/lexterior';
+import Lvidrios from './Componentes/servicios/lvidrios';
+import Lpiletas from './Componentes/servicios/lpiletas';
 
 import Layout from './Componentes/layout';
 import NavBar from './Componentes/navbar';
@@ -18,8 +23,10 @@ import Formulario from './Componentes/Formulario';
 import Lista from './Componentes/Lista';
 import Notas from './Componentes/notas';
 import Clientes from "./Componentes/Clientes";
+import Formservi from './Componentes/Formservi';
 
 import Update from './Componentes/Update';
+
 
 
 
@@ -69,6 +76,10 @@ function App() {
           <Route path="/notas" element={<Notas />} />         
           <Route path="/update" element={<Update />} />         
           <Route path="/clientes" element={<Clientes />} />
+          <Route path="/ltotal" element={<Ltotal />} />
+          <Route path="/lbasica" element={<Lbasica />} />
+          <Route path="/lexterior" element={<Lexterior />} />
+          <Route path="/formservi" element={<Formservi />} />
           <Route path='*' element={<Navigate to="/" />} />
          
         </Routes>

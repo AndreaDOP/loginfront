@@ -12,11 +12,16 @@ export default {
     extend: {
         backgroundImage: {
         'custom-background-image':
-        "url('https://jardinica.com/wp-content/uploads/2023/07/image-15.png')",
+        "url('https://www.portalvidasana.com/wp-content/uploads/tecnicas-relajacion-al-llegar-a-casa.jpg')",
       },
       fontFamily: {
        DynaPuff: ['DynaPuff', 'cursive'],
       },
+    },
+  },
+  variants: {
+    extend: {
+      backgroundColor: ['hover'], // Habilitar las clases hover para cambiar el color de fondo
     },
   },
   plugins: [],
