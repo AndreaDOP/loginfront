@@ -26,7 +26,7 @@ const Header = ({
   };
 
   return (
-    <header className="container flex items-center justify-end px-1 py-1">
+    <header className="container flex items-center justify-end px-1 py-1 ">
       <div className="relative">
         <button
           className="flex items-center justify-center w-10 h-10 bg-gray-300 rounded-full -mt-30"

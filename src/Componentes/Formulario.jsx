@@ -41,7 +41,7 @@ const Formulario = () => {
   return (
     <>
       <section className="text-gray-600 body-font relative">
-        <div className="container mx-auto" />
+        <div className="container mx-auto -mt-10" />
         <div className="flex flex-col text-center w-full mb-12">
           <h1 className="sm:text-5xl text-2xl font-semibold title-font mb-4 text-green-600 flex flex-row-reverse items-center justify-center">
             <FontAwesomeIcon icon={faHandHoldingWater} className="ml-2 text-orange-600" />
@@ -121,11 +121,12 @@ const Formulario = () => {
 
       <div className="p-2 w-full pt-8 mt-8 border-t border-gray-200 text-center">
         <a href="mailto:limpio@limpio.com" className="text-xl font-semibold text-orange-600 hover:text-pink-500">limpio@limpio.com</a>
-        <p className="leading-normal my-5">Calle 7 N324
+        <p className="leading-normal my-5 -mt-5">
+          Calle 7 N324
           <br />Buenos Aires - Argentina
         </p>
 
-        <span className="inline-flex">
+        <span className="inline-flex -mt-8">
           <a className="text-orange-600 transition-colors duration-300 ease-in-out hover:text-pink-500">
             <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-7 h-7" viewBox="0 0 24 24">
               <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
@@ -143,7 +144,6 @@ const Formulario = () => {
             </svg>
           </a>
         </span>
-
       </div>
 
     </>
